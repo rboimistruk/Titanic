@@ -19,24 +19,6 @@ test <- read.csv("titanic/test.csv", stringsAsFactors = T) #892:1309 - test set
 full <- bind_rows(full, test)
 ```
 
-##2. Data Overview
-
-
-Variable      Definition                       Key                                                      Notes                                                                                                                                                
-------------  -------------------------------  -------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------------------------------------------
-PassengerId   PassengerId                                                                                                                                                                                                                                    
-Survived      Survival                         1 = Yes, 0 = No                                                                                                                                                                                               
-Pclass        Ticket Class                     1 = 1st, 2 = 2nd, <br>3 = 3rd                            A proxy for socio-economic status (SES) <br>1st = Upper, 2nd = Middle, 3rd = Lower                                                                   
-Name          Name                                                                                                                                                                                                                                           
-Sex           Sex                                                                                                                                                                                                                                            
-Age           Age                                                                                       Age is fractional if less than 1. <br>If the age is estimated, is it in the form of xx.5                                                             
-SibSp         # of siblings / spouses aboard                                                            Sibling = brother, sister, stepbrother, stepsister, <br>Spouse = husband, wife (mistresses and fiancés were ignored)                                 
-Parch         # of parents / children aboard                                                            Parent = mother, father, <br>Child = daughter, son, stepdaughter, stepson, <br>Some children travelled only with a nanny, therefore parch=0 for them 
-Ticket        Ticket number                                                                                                                                                                                                                                  
-Fare          Passenger fare                                                                                                                                                                                                                                 
-Cabin         Cabin number                                                                                                                                                                                                                                   
-Embarked      Port of Embarkation              C = Cherbourg, <br>Q = Queenstown, <br>S = Southampton                                                                                                                                                        
-
 ##3. Summary of the data
 
 
