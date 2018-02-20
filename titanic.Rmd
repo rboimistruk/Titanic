@@ -19,7 +19,7 @@ library(randomForest)
 ```
 
 ```{r data, warning=FALSE}
-full <- read.csv("titanic/train.csv", stringsAsFactors = T) #1:891 - fulling set
+train <- read.csv("titanic/train.csv", stringsAsFactors = T) #1:891 - fulling set
 test <- read.csv("titanic/test.csv", stringsAsFactors = T) #892:1309 - test set
 full <- bind_rows(full, test)
 ```
